@@ -17,7 +17,7 @@ These scripts parse raw simulation frames (`.xyz` and `.pkl` binaries) to comput
 * **Surface Roughness:** Slices the colony boundary into discrete vertical bins to measure the standard deviation of leading-edge coordinates.
 * **Cluster Identification (PBC):** Utilises `scipy.spatial.cKDTree` to perform fast, distance-based spatial clustering of rod-shaped bacteria across Periodic Boundary Conditions (PBC), mitigating the $O(N^2)$ computational cost of identifying contiguous cell networks.
 
-### Phase 2: Visualisation (`scripts/02_visualization/`)
+### Phase 2: Visualisation (`scripts/02_visualisation/`)
 These scripts ingest the processed `.txt` files to generate standardised, comparative plots across varying nutrient environments ($C_0, D$) and antibiotic concentrations ($A_0$):
 * Density distributions of Cell Lengths and Nematic Order parameters.
 * Trajectory tracking for Mean Aspect Ratios and Relative Susceptible Fitness ($\log_2 \dfrac{N_{sens}}{N_{res}}$) prior to competitive exclusion/extinction.
